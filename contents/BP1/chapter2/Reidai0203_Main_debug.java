@@ -1,4 +1,4 @@
-public class Reidai0201_Main {
+public class Reidai0203_Main {
   public static void main(String[] args) {
     // ここに実装してください
     EXERCISE_BEGIN_EDIT

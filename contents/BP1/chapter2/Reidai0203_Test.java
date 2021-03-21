@@ -20,9 +20,9 @@ public class Reidai0203_Test {
         } finally {
             System.setOut(stdout);
             if (success) {
-                System.out.println("ok 1 文字列の出力 正解!");
+                System.out.println("ok 1 文字列の連結 正解!");
             } else {
-                System.out.println(String.format("not ok 1 出力は\n%s\nでした。期待される出力は\n%s\nです。", result, answer));
+                System.out.println(String.format("not ok 1 不備あり\n出力は\n%sでした。\n\n期待される出力は\n%sです。\n", result, answer));
             }
         }
     }

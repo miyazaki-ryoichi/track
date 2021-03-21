@@ -79,7 +79,7 @@ public class Reidai0404_Test {
             System.setOut(stdout);
             if (success) {
                 //System.out.print(String.format("出力>>\n%s", answer));
-                System.out.println(String.format("ok %d 正解!\n", index));
+                System.out.println(String.format("ok %d 2次方程式の解 正解!\n", index));
             } else {
                 System.out.println(String.format("not ok %d 不備あり\n出力は\n%sでした。\n\n期待される出力は\n%sです。\n", index, result, answer));
             }

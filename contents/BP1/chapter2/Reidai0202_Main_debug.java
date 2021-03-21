@@ -1,8 +1,9 @@
 public class Reidai0202_Main {
   public static void main(String[] args) {
-    System.out.println("計算結果> "); 
     // ここに実装してください
     EXERCISE_BEGIN_EDIT
+    System.out.println("計算結果> "); 
+    
     System.out.println(2+8*2);          //ここの数式をいろいろ変えてみましょう
 
     System.out.println(2+8/2); 

@@ -20,9 +20,9 @@ public class Reidai0301_Test {
         } finally {
             System.setOut(stdout);
             if (success) {
-                System.out.println("ok 1 正解!\n");
+                System.out.println("ok 1 整数の代入と出力 正解!\n");
             } else {
-                System.out.println(String.format("not ok 1 配列の1番目の値を出力する\n出力は\n%sでした。期待される出力は\n%sです。\n", result, answer));
+                System.out.println(String.format("not ok 1 不備あり\n出力は\n%sでした。\n\n期待される出力は\n%sです。\n", result, answer));
             }
         }
     }

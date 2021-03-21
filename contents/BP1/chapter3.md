@@ -18,11 +18,6 @@
 
 - imageName: givery/track-java-8
 
-### hint
-ああ
-
-### tips
-ああ
 
 ## Reidai0302
 
@@ -41,11 +36,6 @@
 
 - imageName: givery/track-java-8
 
-### hint
-ああ
-
-### tips
-ああ
 
 ## Reidai0303
 
@@ -64,11 +54,6 @@
 
 - imageName: givery/track-java-8
 
-### hint
-ああ
-
-### tips
-ああ
 
 ## Reidai0304
 
@@ -87,11 +72,6 @@
 
 - imageName: givery/track-java-8
 
-### hint
-ああ
-
-### tips
-ああ
 
 ## Reidai0305
 
@@ -110,11 +90,6 @@
 
 - imageName: givery/track-java-8
 
-### hint
-ああ
-
-### tips
-ああ
 
 ## Reidai0306
 
@@ -132,9 +107,3 @@
 ### env
 
 - imageName: givery/track-java-8
-
-### hint
-ああ
-
-### tips
-ああ

@@ -7,7 +7,7 @@
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
-- file: [Reidai0201_Main.java](./chapter2/Reidai0201_Main.java)
+- file: [Reidai0201_Main.java](./chapter2/Reidai0201_Main_debug.java)
 - hidden: [Reidai0201_Test.java](./chapter2/Reidai0201_Test.java)
 - mode: remote
 - command: java Reidai0201_Test
@@ -21,11 +21,11 @@
 
 ## Reidai0202
 例2.2 数値の出力
-
+P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
-- file: [Reidai0202_Main.java](./chapter2/Reidai0202_Main.java)
+- file: [Reidai0202_Main.java](./chapter2/Reidai0202_Main_debug.java)
 - hidden: [Reidai0202_Test.java](./chapter2/Reidai0202_Test.java)
 - mode: remote
 - command: java Reidai0202_Test
@@ -45,7 +45,7 @@
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
-- file: [Reidai0203_Main.java](./chapter2/Reidai0203_Main.java)
+- file: [Reidai0203_Main.java](./chapter2/Reidai0203_Main_debug.java)
 - hidden: [Reidai0203_Test.java](./chapter2/Reidai0203_Test.java)
 - mode: remote
 - command: java Reidai0203_Test
@@ -63,7 +63,7 @@
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
-- file: [Reidai0204_Main.java](./chapter2/Reidai0204_Main.java)
+- file: [Reidai0204_Main.java](./chapter2/Reidai0204_Main_debug.java)
 - hidden: [Reidai0204_Test.java](./chapter2/Reidai0204_Test.java)
 - mode: remote
 - command: java Reidai0204_Test
@@ -81,7 +81,7 @@
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
-- file: [Reidai0205_Main.java](./chapter2/Reidai0205_Main.java)
+- file: [Reidai0205_Main.java](./chapter2/Reidai0205_Main_debug.java)
 - hidden: [Reidai0205_Test.java](./chapter2/Reidai0205_Test.java)
 - mode: remote
 - command: java Reidai0205_Test
@@ -99,7 +99,7 @@
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
-- file: [Reidai0206_Main.java](./chapter2/Reidai0206_Main.java)
+- file: [Reidai0206_Main.java](./chapter2/Reidai0206_Main_debug.java)
 - hidden: [Reidai0206_Test.java](./chapter2/Reidai0206_Test.java)
 - mode: remote
 - command: java Reidai0206_Test
