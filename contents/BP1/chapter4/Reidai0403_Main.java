@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Reidai0401_Main {
+public class Reidai0403_Main {
   public static void main(String[] args) {
     // ここに実装してください
     

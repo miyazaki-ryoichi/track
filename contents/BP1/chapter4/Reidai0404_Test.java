@@ -30,27 +30,46 @@ class MyInputStream extends InputStream {
     }
 }
 
-public class Reidai0401_Test {
-    public static void doTest(int index, String a) {
+public class Reidai0404_Test {
+    public static void doTest(int index, String a, String b, String c) {
         
         MyInputStream myIn = new MyInputStream();
         System.setIn(myIn); // 自作の標準入力オブジェクトをセット
         myIn.typeLine(a); // 標準入力に相当する操作
+        myIn.typeLine(b); // 標準入力に相当する操作
+        myIn.typeLine(c); // 標準入力に相当する操作
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         PrintStream stdout = System.out;
         System.setOut(new PrintStream(out));
 
-        int num = Integer.parseInt(a);
+        int seisu1 = Integer.parseInt(a);
+        int seisu2 = Integer.parseInt(b);
+        int seisu3 = Integer.parseInt(c);
+
         String answer;
-        if (num%2==0)   answer="整数を入力してください>> " + Integer.parseInt(a) + " は偶数です\n" ;
-        else            answer="整数を入力してください>> " + Integer.parseInt(a) + " は奇数です\n" ;
+
+        double D = seisu2 * seisu2 - 4 * seisu1 * seisu3;
+        double x1, x2;
+
+        if (D == 0){       //重解の場合
+            x1 = -seisu2/ (2 * seisu1);
+            answer="方程式 ax^2 + bx + c = 0 の a b c を入力してください\na = b = c = 解は重解で " + x1 + "\n";
+        }
+        else if (D > 0){   //実数解が二つの場合               
+            x1 = (-seisu2 + Math.sqrt(D)) / (2 * seisu1);
+            x2 = (-seisu2 - Math.sqrt(D)) / (2 * seisu1);
+            answer="方程式 ax^2 + bx + c = 0 の a b c を入力してください\na = b = c = 解は " + x1 + " と " + x2 + "\n";
+        }
+        else{              //実数解がない場合
+            answer="方程式 ax^2 + bx + c = 0 の a b c を入力してください\na = b = c = 実数解はありません\n";
+        }
 
         String result = "";
         boolean success = false;
 
         try {
-            Reidai0401_Main.main(new String[0]);
+            Reidai0404_Main.main(new String[0]);
             result = out.toString();
 
             if (answer.equals(result)) {
@@ -68,7 +87,8 @@ public class Reidai0401_Test {
     }
 
     public static void main(String[] args) {
-        doTest(1, "6");
-        doTest(2, "3");
+        doTest(1, "2", "4", "2");
+        doTest(2, "1", "3", "3");
+        doTest(3, "1", "2", "3");
     }
 }

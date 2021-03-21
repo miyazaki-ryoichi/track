@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Reidai0401_Main {
   public static void main(String[] args) {
     // ここに実装してください
@@ -8,10 +9,10 @@ public class Reidai0401_Main {
     System.out.print("整数を入力してください>> ");
     seisu = sc.nextInt();
     if (seisu % 2 == 1){       //2 で割った余りが 1 だった
-        System.out.println(seisu + "は奇数です");
+        System.out.println(seisu + " は奇数です");
     }
     else{                     //2 で割った余りがそれ以外だった
-        System.out.println(seisu + "は偶数です");
+        System.out.println(seisu + " は偶数です");
     }
     sc.close();
     EXERCISE_END_EDIT

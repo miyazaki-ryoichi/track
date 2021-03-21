@@ -30,7 +30,7 @@ class MyInputStream extends InputStream {
     }
 }
 
-public class Reidai0401_Test {
+public class Reidai0402_Test {
     public static void doTest(int index, String a) {
         
         MyInputStream myIn = new MyInputStream();
@@ -43,14 +43,14 @@ public class Reidai0401_Test {
 
         int num = Integer.parseInt(a);
         String answer;
-        if (num%2==0)   answer="整数を入力してください>> " + Integer.parseInt(a) + " は偶数です\n" ;
-        else            answer="整数を入力してください>> " + Integer.parseInt(a) + " は奇数です\n" ;
+        if (num%3==0 || num%7==0)   answer="整数を入力してください>> 3 か 7 の倍数\n" ;
+        else                        answer="整数を入力してください>> 3 でも 7 でも割り切れません\n" ;
 
         String result = "";
         boolean success = false;
 
         try {
-            Reidai0401_Main.main(new String[0]);
+            Reidai0402_Main.main(new String[0]);
             result = out.toString();
 
             if (answer.equals(result)) {
@@ -68,7 +68,7 @@ public class Reidai0401_Test {
     }
 
     public static void main(String[] args) {
-        doTest(1, "6");
-        doTest(2, "3");
+        doTest(1, "9");
+        doTest(2, "16");
     }
 }

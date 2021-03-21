@@ -30,27 +30,36 @@ class MyInputStream extends InputStream {
     }
 }
 
-public class Reidai0401_Test {
-    public static void doTest(int index, String a) {
+public class Reidai0403_Test {
+    public static void doTest(int index, String a, String b) {
         
         MyInputStream myIn = new MyInputStream();
         System.setIn(myIn); // 自作の標準入力オブジェクトをセット
         myIn.typeLine(a); // 標準入力に相当する操作
+        myIn.typeLine(b); // 標準入力に相当する操作
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         PrintStream stdout = System.out;
         System.setOut(new PrintStream(out));
 
-        int num = Integer.parseInt(a);
+        int seisu1 = Integer.parseInt(a);
+        int seisu2 = Integer.parseInt(b);
         String answer;
-        if (num%2==0)   answer="整数を入力してください>> " + Integer.parseInt(a) + " は偶数です\n" ;
-        else            answer="整数を入力してください>> " + Integer.parseInt(a) + " は奇数です\n" ;
+        if (Math.abs(seisu1) > Math.abs(seisu2)){       
+            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 +  "| > |" + seisu2 + "|\n";
+        }
+        else if (Math.abs(seisu1) < Math.abs(seisu2) ){                  
+            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 + "| < |" + seisu2 + "|\n";
+        }
+        else{
+            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 + "| = |" + seisu2 + "|\n";
+        }
 
         String result = "";
         boolean success = false;
 
         try {
-            Reidai0401_Main.main(new String[0]);
+            Reidai0403_Main.main(new String[0]);
             result = out.toString();
 
             if (answer.equals(result)) {
@@ -68,7 +77,7 @@ public class Reidai0401_Test {
     }
 
     public static void main(String[] args) {
-        doTest(1, "6");
-        doTest(2, "3");
+        doTest(1, "-20", "12");
+        doTest(2, "-10", "10");
     }
 }
