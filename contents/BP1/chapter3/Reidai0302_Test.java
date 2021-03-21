@@ -32,7 +32,7 @@ public class Reidai0302_Test {
         } finally {
             System.setOut(stdout);
             if (success) {
-                System.out.println("ok 1 文字列と整数型変数の中身の出力 正解!\n");
+                System.out.println("ok 1 正解!\n");
             } else {
                 System.out.println(String.format("not ok 1 不備あり\n出力は\n%sでした。\n\n期待される出力は\n%sです。\n", result, answer));
             }

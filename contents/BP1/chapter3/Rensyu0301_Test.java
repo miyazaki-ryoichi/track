@@ -30,36 +30,22 @@ class MyInputStream extends InputStream {
     }
 }
 
-public class Reidai0403_Test {
-    public static void doTest(int index, String a, String b) {
+public class Rensyu0301_Test {
+    public static void doTest(int index) {
         
         MyInputStream myIn = new MyInputStream();
         System.setIn(myIn); // 自作の標準入力オブジェクトをセット
-        myIn.typeLine(a); // 標準入力に相当する操作
-        myIn.typeLine(b); // 標準入力に相当する操作
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         PrintStream stdout = System.out;
         System.setOut(new PrintStream(out));
 
-        int seisu1 = Integer.parseInt(a);
-        int seisu2 = Integer.parseInt(b);
-        String answer;
-        if (Math.abs(seisu1) > Math.abs(seisu2)){       
-            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 +  "| > |" + seisu2 + "|\n";
-        }
-        else if (Math.abs(seisu1) < Math.abs(seisu2) ){                  
-            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 + "| < |" + seisu2 + "|\n";
-        }
-        else{
-            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 + "| = |" + seisu2 + "|\n";
-        }
-
+        String answer = "9, 24\n";
         String result = "";
         boolean success = false;
 
         try {
-            Reidai0403_Main.main(new String[0]);
+            Rensyu0301_Main.main(new String[0]);
             result = out.toString();
 
             if (answer.equals(result)) {
@@ -77,7 +63,6 @@ public class Reidai0403_Test {
     }
 
     public static void main(String[] args) {
-        doTest(1, "-20", "12");
-        doTest(2, "-10", "10");
+        doTest(1);
     }
 }

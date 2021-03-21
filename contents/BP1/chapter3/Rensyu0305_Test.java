@@ -30,13 +30,15 @@ class MyInputStream extends InputStream {
     }
 }
 
-public class Reidai0403_Test {
-    public static void doTest(int index, String a, String b) {
+public class Rensyu0305_Test {
+    public static void doTest(int index, String a, String b, String c) {
         
         MyInputStream myIn = new MyInputStream();
         System.setIn(myIn); // 自作の標準入力オブジェクトをセット
+
         myIn.typeLine(a); // 標準入力に相当する操作
         myIn.typeLine(b); // 標準入力に相当する操作
+        myIn.typeLine(c); // 標準入力に相当する操作
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         PrintStream stdout = System.out;
@@ -44,22 +46,14 @@ public class Reidai0403_Test {
 
         int seisu1 = Integer.parseInt(a);
         int seisu2 = Integer.parseInt(b);
-        String answer;
-        if (Math.abs(seisu1) > Math.abs(seisu2)){       
-            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 +  "| > |" + seisu2 + "|\n";
-        }
-        else if (Math.abs(seisu1) < Math.abs(seisu2) ){                  
-            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 + "| < |" + seisu2 + "|\n";
-        }
-        else{
-            answer="整数 1 を入力してください>> 整数 2 を入力してください>> |" + seisu1 + "| = |" + seisu2 + "|\n";
-        }
+        int seisu3 = Integer.parseInt(c);
 
+        String answer = (2*(seisu1*seisu2+seisu2*seisu3+seisu3*seisu1))+", "+(seisu1*seisu2*seisu3)+"\n";
         String result = "";
         boolean success = false;
 
         try {
-            Reidai0403_Main.main(new String[0]);
+            Rensyu0305_Main.main(new String[0]);
             result = out.toString();
 
             if (answer.equals(result)) {
@@ -71,13 +65,14 @@ public class Reidai0403_Test {
                 //System.out.print(String.format("出力>>\n%s", answer));
                 System.out.println(String.format("ok %d 正解!\n", index));
             } else {
-                System.out.println(String.format("not ok %d 不備あり\n出力は\n%sでした。\n\n期待される出力は\n%sです。\n", index, result, answer));
+                System.out.println(String.format("not ok %d 不備あり\n%d, %d, %d が入力された場合の出力は\n%sでした。\n\n期待される出力は\n%sです。\n", index, seisu1, seisu2, seisu3, result, answer));
             }
         }
     }
 
     public static void main(String[] args) {
-        doTest(1, "-20", "12");
-        doTest(2, "-10", "10");
+        doTest(1, "2", "3", "4");
+        doTest(2, "10", "11", "12");
+        doTest(3, "8", "3", "6");
     }
 }

@@ -20,7 +20,7 @@ public class Reidai0205_Test {
         } finally {
             System.setOut(stdout);
             if (success) {
-                System.out.println("ok 1 文字の連結 正解!");
+                System.out.println("ok 1 正解!");
             } else {
                 System.out.println(String.format("not ok 1 不備あり\n出力は\n%sでした。\n\n期待される出力は\n%sです。\n", result, answer));
             }
