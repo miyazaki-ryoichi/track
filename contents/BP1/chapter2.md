@@ -1,5 +1,9 @@
 # 第２章
+<<<<<<< HEAD
 第２章の課題の提出
+=======
+第２章の例題の提出
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 
 ## Reidai0201
 例2.1 文字列の出力
@@ -7,7 +11,11 @@
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Reidai0201_Main.java](./chapter2/Reidai0201_Main.java)
+=======
+- file: [Reidai0201_Main.java](./chapter2/Reidai0201_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Reidai0201_Test.java](./chapter2/Reidai0201_Test.java)
 - mode: remote
 - command: java Reidai0201_Test
@@ -25,7 +33,11 @@ P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Reidai0202_Main.java](./chapter2/Reidai0202_Main.java)
+=======
+- file: [Reidai0202_Main.java](./chapter2/Reidai0202_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Reidai0202_Test.java](./chapter2/Reidai0202_Test.java)
 - mode: remote
 - command: java Reidai0202_Test
@@ -45,7 +57,11 @@ P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Reidai0203_Main.java](./chapter2/Reidai0203_Main.java)
+=======
+- file: [Reidai0203_Main.java](./chapter2/Reidai0203_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Reidai0203_Test.java](./chapter2/Reidai0203_Test.java)
 - mode: remote
 - command: java Reidai0203_Test
@@ -63,7 +79,11 @@ P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Reidai0204_Main.java](./chapter2/Reidai0204_Main.java)
+=======
+- file: [Reidai0204_Main.java](./chapter2/Reidai0204_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Reidai0204_Test.java](./chapter2/Reidai0204_Test.java)
 - mode: remote
 - command: java Reidai0204_Test
@@ -81,7 +101,11 @@ P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Reidai0205_Main.java](./chapter2/Reidai0205_Main.java)
+=======
+- file: [Reidai0205_Main.java](./chapter2/Reidai0205_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Reidai0205_Test.java](./chapter2/Reidai0205_Test.java)
 - mode: remote
 - command: java Reidai0205_Test
@@ -99,7 +123,11 @@ P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Reidai0206_Main.java](./chapter2/Reidai0206_Main.java)
+=======
+- file: [Reidai0206_Main.java](./chapter2/Reidai0206_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Reidai0206_Test.java](./chapter2/Reidai0206_Test.java)
 - mode: remote
 - command: java Reidai0206_Test
@@ -125,7 +153,11 @@ P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Rensyu0201_Main.java](./chapter2/Rensyu0201_Main.java)
+=======
+- file: [Rensyu0201_Main.java](./chapter2/Rensyu0201_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Rensyu0201_Test.java](./chapter2/Rensyu0201_Test.java)
 - mode: remote
 - command: java Rensyu0201_Test
@@ -155,7 +187,11 @@ P9 の数式も追加して実行してください．
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Rensyu0202_Main.java](./chapter2/Rensyu0202_Main.java)
+=======
+- file: [Rensyu0202_Main.java](./chapter2/Rensyu0202_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Rensyu0202_Test.java](./chapter2/Rensyu0202_Test.java)
 - mode: remote
 - command: java Rensyu0202_Test
@@ -195,7 +231,11 @@ System.out.println("答は"+3/2.0+4*1.1);
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Rensyu0203_Main.java](./chapter2/Rensyu0203_Main.java)
+=======
+- file: [Rensyu0203_Main.java](./chapter2/Rensyu0203_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Rensyu0203_Test.java](./chapter2/Rensyu0203_Test.java)
 - mode: remote
 - command: java Rensyu0203_Test
@@ -217,7 +257,11 @@ System.out.println("答は"+3/2.0+4*1.1);
 
 ### exercise
 - build: javac -J-Duser.language=ja *.java
+<<<<<<< HEAD
 - file: [Rensyu0204_Main.java](./chapter2/Rensyu0204_Main.java)
+=======
+- file: [Rensyu0204_Main.java](./chapter2/Rensyu0204_Main_debug.java)
+>>>>>>> 9036de82d016ef71b375eaaf44aac36001f6ae7f
 - hidden: [Rensyu0204_Test.java](./chapter2/Rensyu0204_Test.java)
 - mode: remote
 - command: java Rensyu0204_Test
